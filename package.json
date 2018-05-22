@@ -1,0 +1,27 @@
+{
+  "name": "who-driving",
+  "version": "1.0.0",
+  "description": "driving app",
+  "main": "driving.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch src/stylesheets/scss -o src/stylesheets/css"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinlo123/designated-driver-app.git"
+  },
+  "keywords": [
+    "driving",
+    "app"
+  ],
+  "author": "Kevin Lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinlo123/designated-driver-app/issues"
+  },
+  "homepage": "https://github.com/kevinlo123/designated-driver-app#readme",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

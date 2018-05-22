@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+$font: 'Roboto', sans-serif;
+
+*{
+    box-sizing: border-box;
+    font-family: $font;
+    font-weight: 100;
+}
+
+html {
+    font-size: 15px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../.././images/alcohol.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    @media (min-width: 600px){
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../.././images/highway.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;        
+    }
+}
+
+@import "header.scss";
+
