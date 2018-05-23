@@ -1,7 +1,7 @@
 (() => {
    const firstName =  document.getElementById("firstName");
    const lastName =  document.getElementById("lastName");
-   const age =  document.getElementById("age"); 
+   const userAge =  document.getElementById("age");
    const addButton = document.getElementById("add");
    const shuffleButton = document.getElementById("shuffle");
    const clearbutton = document.getElementById("clear");  
@@ -34,10 +34,11 @@
       age() {
          return this.age;
       }
-   }
+   }   
     
    const addPersonToList = () => {
-      let checkAge = parseFloat(age.value); 
+      const age = userAge.options[userAge.selectedIndex].value; 
+      const checkAge = age;      
       checkInputs(checkAge);
       if(checkAge < 16) {
          console.log(`person is too young to drive`);
@@ -48,7 +49,6 @@
    const clearInputs = () => {
       firstName.value = "";
       lastName.value = "";
-      age.value = "";
    };
 
    const personPicked = () => {
@@ -77,7 +77,8 @@
          alert("not a number!");
          age.value = "";
       }else {
-         let checkAge = parseFloat(age.value);             
+         age = userAge.options[userAge.selectedIndex].value;         
+         let checkAge = parseFloat(age);             
          let personAdded = new Person(firstName.value, lastName.value, checkAge);
          people.push(personAdded);
          console.log(personAdded);

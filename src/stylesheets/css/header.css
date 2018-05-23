@@ -47,7 +47,7 @@
     list-style: none;
     padding-bottom: -5px; }
     .nav-list-item:hover {
-      transition: ease-in .5s all;
+      transition: ease-in .3s all;
       opacity: .4;
       cursor: pointer; } }
 
