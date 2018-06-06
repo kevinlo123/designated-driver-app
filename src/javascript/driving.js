@@ -35,6 +35,21 @@
          return this.age;
       }
    }   
+
+   const checkInputs = (x) => {
+      if(isNaN(x)) {
+         alert("not a number!");
+         age.value = "";
+      }else {
+         age = userAge.options[userAge.selectedIndex].value;         
+         let checkAge = parseFloat(age);             
+         let personAdded = new Person(firstName.value, lastName.value, checkAge);
+         people.push(personAdded);
+         console.log(personAdded);
+         console.log(people);
+         clearInputs();
+      }
+   }
     
    const addPersonToList = () => {
       const age = userAge.options[userAge.selectedIndex].value; 
@@ -44,11 +59,6 @@
          console.log(`person is too young to drive`);
          people.pop();
       }  
-   };
-
-   const clearInputs = () => {
-      firstName.value = "";
-      lastName.value = "";
    };
 
    const personPicked = () => {
@@ -71,25 +81,15 @@
       alert(`all drivers have been removed`);
       return people;
    }
+   
+   const clearInputs = () => {
+      firstName.value = "";
+      lastName.value = "";
+   };
 
-   const checkInputs = (x) => {
-      if(isNaN(x)) {
-         alert("not a number!");
-         age.value = "";
-      }else {
-         age = userAge.options[userAge.selectedIndex].value;         
-         let checkAge = parseFloat(age);             
-         let personAdded = new Person(firstName.value, lastName.value, checkAge);
-         people.push(personAdded);
-         console.log(personAdded);
-         console.log(people);
-         clearInputs();
-      }
-    }
-
-    shuffleButton.addEventListener("click" , personPicked);
-    addButton.addEventListener("click" , addPersonToList);    
-    clearbutton.addEventListener("click" , clearAllDrivers);
+   addButton.addEventListener("click" , addPersonToList); 
+   shuffleButton.addEventListener("click" , personPicked);   
+   clearbutton.addEventListener("click" , clearAllDrivers);
 })();
 
 
