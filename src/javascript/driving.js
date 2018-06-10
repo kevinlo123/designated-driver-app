@@ -1,7 +1,7 @@
 
 window.addEventListener('load', () => {
    setTimeout(() => {
-      document.getElementsByClassName("main-wrapper")[0].style.display = "block";
+      document.getElementsByClassName("main-wrapper")[0].style.opacity = "1";
       document.getElementsByClassName("sk-circle")[0].style.display = "none";
    },2000);
 });
@@ -59,7 +59,8 @@ window.addEventListener('load', () => {
       }
    }
     
-   const addPersonToList = () => {
+   const addPersonToList = (e) => {
+      e.preventDefault();
       const age = userAge.options[userAge.selectedIndex].value; 
       const checkAge = age;      
       checkInputs(checkAge);
@@ -69,7 +70,8 @@ window.addEventListener('load', () => {
       }  
    };
 
-   const personPicked = () => {
+   const personPicked = (e) => {
+      e.preventDefault();
       for(let i = 0; i < people.length; i++) { //logic for picking driver if the person is under 21 y/o (not old enough to drink)
          let listOfPeopleAges = people[i].age;
          let first = people[i].firstName;
@@ -82,7 +84,8 @@ window.addEventListener('load', () => {
       console.log(`${personDriving.firstName} was chosen as your designated driver`);
    };
 
-   const clearAllDrivers = () => {
+   const clearAllDrivers = (e) => {
+      e.preventDefault();
       people = [];
       console.log(people);
       console.log(`all drivers have been removed`);
