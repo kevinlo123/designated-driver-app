@@ -1,7 +1,9 @@
 
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
    setTimeout(() => {
       document.getElementsByClassName("main-wrapper")[0].style.opacity = "1";
+      document.getElementsByClassName("header")[0].classList.add("animate");
+      document.getElementsByClassName("header-desktop")[0].classList.add("animate");                           
       document.getElementsByClassName("sk-circle")[0].style.display = "none";
    },2000);
 });
