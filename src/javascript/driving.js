@@ -1,3 +1,11 @@
+
+window.addEventListener('load', () => {
+   setTimeout(() => {
+      document.getElementsByClassName("main-wrapper")[0].style.display = "block";
+      document.getElementsByClassName("sk-circle")[0].style.display = "none";
+   },2000);
+});
+
 (() => {
    const firstName =  document.getElementById("firstName");
    const lastName =  document.getElementById("lastName");

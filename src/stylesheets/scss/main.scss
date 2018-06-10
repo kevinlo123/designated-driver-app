@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
 $font: 'Roboto', sans-serif;
 
-*{
+* {
     box-sizing: border-box;
     font-family: $font;
     font-weight: 100;
@@ -11,7 +11,7 @@ html {
     font-size: 15px;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
@@ -21,6 +21,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    display: none;
     @media (min-width: 600px){
         background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../.././images/highway.jpg');
         background-size: cover;
@@ -30,5 +31,6 @@ body{
 }
 
 @import "header.scss";
-@import "input-buttons.scss"
+@import "input-buttons.scss";
+@import "loader.scss";
 

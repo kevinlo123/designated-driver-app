@@ -6,7 +6,7 @@
     justify-content: space-between;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     animation: slideDown 1s cubic-bezier(0.19, 1, 0.30, 1) 0.5s forwards;    
-    .header-title{
+    .header-title {
         position: relative;
         top: 2px;
         margin: 0px 15px;
@@ -37,7 +37,6 @@
         padding: 1rem;
         display: flex;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-        animation: slideDown 1s cubic-bezier(0.19, 1, 0.30, 1) 0.5s forwards;        
         .title-desktop {
             margin: 10px 0;
         }      
@@ -50,13 +49,13 @@
             }
         }
     }
-    .nav-list-item{
+    .nav-list-item {
         margin: 0 15px;
         display: inline;
         font-size: 20px;
         list-style: none;
         padding-bottom: -5px;
-        &:hover{
+        &:hover {
             transition: ease-in .3s all;
             opacity: .4;
             cursor: pointer;
@@ -64,16 +63,3 @@
     }
 }
 
-@keyframes slideDown {
-    0% {
-        transform: translateY(-150px);
-        opacity: 0;
-    }
-    50% {
-        opacity: 0.2%;
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
