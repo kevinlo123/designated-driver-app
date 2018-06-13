@@ -91,9 +91,8 @@ body {
 
 .body-header {
   color: white;
-  font-size: 3em;
+  font-size: 2.75em;
   width: 35%;
-  margin-bottom: 30px;
   padding: 0 1.5rem; }
 
 .inputs-select-container {
@@ -139,7 +138,7 @@ body {
   color: white;
   border: none;
   padding: 7px;
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 2px;
@@ -153,6 +152,12 @@ body {
 
 #age {
   height: 41px; }
+
+@media (min-width: 375px) {
+  .body-header {
+    font-size: 2.75em; }
+  #add, #shuffle, #clear {
+    font-size: 20px; } }
 
 .sk-circle {
   margin: 100px auto;
