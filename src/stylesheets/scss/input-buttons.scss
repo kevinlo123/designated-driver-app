@@ -1,3 +1,19 @@
+.inputs-select-container{
+    width: 90%;
+    margin: 0 auto;
+    #firstName ,#lastName, #age {
+        width: 95%;
+    }
+}
+
+.body-header {
+    color: white;
+    font-size: 3em;
+    width: 35%;
+    margin-bottom: 10px;
+    padding: 0 1.5rem;
+}
+
 #firstName ,#lastName, #age {
     border: 1px solid white;
     opacity: 0.7;
@@ -18,16 +34,47 @@
     }
 }
 
-.body-header {
-    color: white;
-    font-size: 3em;
-    width: 35%;
-    margin-bottom: 10px;
+.button-container{
+    width: 90%;
+    margin: 0 auto;
+    #clear {
+        width: 95%;
+    } 
 }
+
+ #add, #shuffle, #clear{
+    background: linear-gradient(180deg,#3684df,#004fb3);
+    color: white;
+    border: none;
+    padding: 7px;
+    font-size: 20px;
+    margin: 10px;
+    width: 85%;
+    border-radius: 2px;
+    display: block;
+    &:hover {
+        cursor: pointer;
+    }       
+}
+
+.add-shuffle-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    #add, #shuffle{
+        width: 45%;
+        display: inline-block;
+        justify-content: center;
+    }
+}
+
 
 #age {
     background-color: white;
     width: 136px;
     height: 41px;
 }
+
 

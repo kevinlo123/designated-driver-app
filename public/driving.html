@@ -12,7 +12,13 @@
       <link href="../src/stylesheets/css/main.css" media="screen" rel="stylesheet"/>
       <script src="https://use.fontawesome.com/f5fb6e9872.js"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/> 
-      <link rel='shortcut icon' type='image/x-icon' href="steering.ico" />      
+      <link rel='shortcut icon' type='image/x-icon' href="steering.ico" />
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->    
    </head>
    <body>
       <div class="sk-circle">
@@ -47,54 +53,59 @@
                   <li class="nav-list-item">About</li>
                </ul>
             </nav>
-         </header>
-         <div>
-            <h1 class="body-header">Filler Text Will Change</h1>
-         </div>               
+         </header>             
          <div class="input-buttons-container">
+            <h1 class="body-header">Stay Safe. Designate!</h1>               
             <form>
-               <input type="text" id="firstName" placeholder="First Name"/>
-               <input type="text" id="lastName" placeholder="Last Name"/>
-               <select id="age">
-                  <option>16</option>
-                  <option>17</option>
-                  <option>18</option>
-                  <option>19</option>
-                  <option>20</option>
-                  <option>21</option>
-                  <option>22</option>
-                  <option>23</option>
-                  <option>24</option>
-                  <option>25</option>
-                  <option>26</option>
-                  <option>27</option>
-                  <option>28</option>                
-                  <option>29</option>                
-                  <option>30</option>                
-                  <option>31</option>                
-                  <option>32</option>                
-                  <option>33</option>                
-                  <option>34</option>                
-                  <option>35</option>                
-                  <option>36</option> 
-                  <option>36</option>
-                  <option>38</option>
-                  <option>39</option>
-                  <option>40</option>
-                  <option>41</option>
-                  <option>42</option>
-                  <option>43</option>
-                  <option>44</option>
-                  <option>45</option>
-                  <option>46</option>
-                  <option>47</option>
-                  <option>48</option>
-                  <option>49</option>                
-                  <option>50+</option>                                                               
-               </select>
-               <button id="add">Add Person</button>       
-               <button id="shuffle">Shuffle and Pick</button>
-               <button id="clear">Clear Drivers</button>
+               <div class="inputs-select-container">
+                  <input type="text" id="firstName" placeholder="First Name" required/>
+                  <input type="text" id="lastName" placeholder="Last Name" required/>
+                  <select id="age" required>
+                     <option>16</option>
+                     <option>17</option>
+                     <option>18</option>
+                     <option>19</option>
+                     <option>20</option>
+                     <option>21</option>
+                     <option>22</option>
+                     <option>23</option>
+                     <option>24</option>
+                     <option>25</option>
+                     <option>26</option>
+                     <option>27</option>
+                     <option>28</option>                
+                     <option>29</option>                
+                     <option>30</option>                
+                     <option>31</option>                
+                     <option>32</option>                
+                     <option>33</option>                
+                     <option>34</option>                
+                     <option>35</option>                
+                     <option>36</option> 
+                     <option>36</option>
+                     <option>38</option>
+                     <option>39</option>
+                     <option>40</option>
+                     <option>41</option>
+                     <option>42</option>
+                     <option>43</option>
+                     <option>44</option>
+                     <option>45</option>
+                     <option>46</option>
+                     <option>47</option>
+                     <option>48</option>
+                     <option>49</option>                
+                     <option>50+</option>                                                               
+                  </select>
+               </div>
+               <!-- <input type="submit" id="add" placeholder="Add Person"/>  -->
+               <div class="add-shuffle-container">
+                  <button id="add">Add Person</button>       
+                  <button id="shuffle">Shuffle and Pick</button>
+               </div>
+               <div class="button-container">                        
+                  <button id="clear">Clear Drivers</button>
+               </div>                    
             </form>         
          </div>       
       </div>
