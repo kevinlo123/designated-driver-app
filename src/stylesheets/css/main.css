@@ -89,41 +89,50 @@ body {
     opacity: 1;
     transform: none; } }
 
-.inputs-select-container {
-  width: 90%;
-  margin: 0 auto; }
-  .inputs-select-container #firstName, .inputs-select-container #lastName, .inputs-select-container #age {
-    width: 95%; }
-
 .body-header {
   color: white;
   font-size: 3em;
   width: 35%;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   padding: 0 1.5rem; }
 
-#firstName, #lastName, #age {
-  border: 1px solid white;
-  opacity: 0.7;
-  filter: alpha(opacity=60);
-  border-radius: 2px;
-  color: #3684df;
-  padding: 7px;
-  font-size: 20px;
-  margin: 10px;
-  transition: all 300ms ease-in-out; }
-  #firstName:focus, #lastName:focus, #age:focus {
-    outline: none;
-    border: 1px solid #fff !important;
-    box-shadow: 0px 0px 8px 0px white; }
-  #firstName::placeholder, #lastName::placeholder, #age::placeholder {
-    color: #3684df; }
-
-.button-container {
+.inputs-select-container {
   width: 90%;
   margin: 0 auto; }
-  .button-container #clear {
-    width: 95%; }
+  .inputs-select-container #firstName, .inputs-select-container #lastName, .inputs-select-container #age {
+    width: 95%;
+    display: block;
+    border: 1px solid white;
+    opacity: 0.7;
+    filter: alpha(opacity=60);
+    border-radius: 2px;
+    color: #3684df;
+    padding: 7px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 300ms ease-in-out; }
+    .inputs-select-container #firstName:focus, .inputs-select-container #lastName:focus, .inputs-select-container #age:focus {
+      outline: none;
+      border: 1px solid #fff !important;
+      box-shadow: 0px 0px 8px 0px white; }
+    .inputs-select-container #firstName::placeholder, .inputs-select-container #lastName::placeholder, .inputs-select-container #age::placeholder {
+      color: #3684df; }
+
+.add-shuffle-container, .button-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around; }
+  .add-shuffle-container #add, .add-shuffle-container #shuffle, .button-container #add, .button-container #shuffle {
+    width: 45%; }
+
+#clear {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto; }
 
 #add, #shuffle, #clear {
   background: linear-gradient(180deg, #3684df, #004fb3);
@@ -131,27 +140,18 @@ body {
   border: none;
   padding: 7px;
   font-size: 20px;
-  margin: 10px;
-  width: 85%;
+  margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 2px;
   display: block; }
+  #add:focus, #shuffle:focus, #clear:focus {
+    outline: none;
+    border: .5px solid #fff !important;
+    box-shadow: 0px 0px 8px 0px white; }
   #add:hover, #shuffle:hover, #clear:hover {
     cursor: pointer; }
 
-.add-shuffle-container {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-  .add-shuffle-container #add, .add-shuffle-container #shuffle {
-    width: 45%;
-    display: inline-block;
-    justify-content: center; }
-
 #age {
-  background-color: white;
-  width: 136px;
   height: 41px; }
 
 .sk-circle {
