@@ -12,7 +12,7 @@ window.addEventListener("load", () => {
    const firstName =  document.getElementById("firstName");
    const lastName =  document.getElementById("lastName");
    const userAge =  document.getElementById("age");
-   const addButton = document.getElementById("add");
+   const form = document.getElementById("driversForm");
    const shuffleButton = document.getElementById("shuffle");
    const clearbutton = document.getElementById("clear");  
    let people = []; //array to hold people
@@ -100,7 +100,7 @@ window.addEventListener("load", () => {
       lastName.value = "";
    };
 
-   addButton.addEventListener("click" , addPersonToList); 
+   form.addEventListener("submit" , addPersonToList); 
    shuffleButton.addEventListener("click" , personPicked);   
    clearbutton.addEventListener("click" , clearAllDrivers);
 })();
