@@ -36,6 +36,9 @@ body {
     position: relative;
     top: 2px;
     margin: 0px 15px; }
+  .header a {
+    text-decoration: none;
+    color: white; }
 
 .header-desktop {
   display: none; }
@@ -53,8 +56,8 @@ body {
   .header-desktop {
     display: block;
     background: linear-gradient(180deg, #3684df, #004fb3);
-    color: white;
     padding: 1rem;
+    color: white;
     display: flex;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     .header-desktop .title-desktop {
@@ -74,7 +77,10 @@ body {
     .nav-list-item:hover {
       transition: ease-in .3s all;
       opacity: .4;
-      cursor: pointer; } }
+      cursor: pointer; }
+  a {
+    text-decoration: none;
+    color: white; } }
 
 .animate {
   animation: slideDown 1s cubic-bezier(0.19, 1, 0.3, 1) 0.2s forwards; }
