@@ -8,7 +8,7 @@
       <meta name="Key words" content="Safe,Driving,Friends,Family"/>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link rel="preload" href="../src/stylesheets/css/main.css" as="style">
-      <link rel="preload" href="../src/javascript/driving.js" as="script">
+      <link rel="preload" href="../src/javascript/main.js" as="script">
       <link href="../src/stylesheets/css/main.css" media="screen" rel="stylesheet"/>
       <script src="https://use.fontawesome.com/f5fb6e9872.js"></script>
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/> 
@@ -41,16 +41,18 @@
             <i class="fas fa-map-marker-alt"></i>               
             <h1 class="header-title">Designate</h1>
             <div class="header-icon">
-               <i class="fas fa-question-circle"></i>                              
+               <a href="/public/about.html">
+                  <i class="fas fa-question-circle" title="About"></i>
+               </a>                              
             </div>
          </header>
          <header class="header-desktop">
             <h1 class="title-desktop">Designate</h1>                                   
             <nav class="nav-desktop">
                <ul class="nav-list">
-                  <li class="nav-list-item">Home</li>
-                  <li class="nav-list-item">Maps</li>                  
-                  <li class="nav-list-item">About</li>
+                  <li class="nav-list-item"><a href="/public/index.html">Home</a></li>
+                  <li class="nav-list-item"><a href="#">Maps</a></li>                  
+                  <li class="nav-list-item"><a href="/public/about.html">About</a></li>
                </ul>
             </nav>
          </header>             
@@ -108,6 +110,6 @@
             </form>         
          </div>       
       </div>
-      <script type="text/javascript" src="../src/javascript/driving.js"></script>     
+      <script type="text/javascript" src="../src/javascript/main.js"></script>     
    </body>  
 </html>

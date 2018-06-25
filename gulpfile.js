@@ -17,7 +17,7 @@ gulp.task('serve', ['sass'], () => {
    gulp.watch('src/stylesheets/scss/*.scss',['sass']);
    gulp.watch('src/stylesheets/scss/*.scss').on('change', browserSync.reload);
    gulp.watch('src/javascript/*.js').on('change', browserSync.reload);           
-   gulp.watch('public/driving.html').on('change', browserSync.reload);    
+   gulp.watch('public/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['serve']);

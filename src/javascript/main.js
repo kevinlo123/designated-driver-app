@@ -104,12 +104,3 @@ window.addEventListener("load", () => {
    shuffleButton.addEventListener("click" , personPicked);   
    clearbutton.addEventListener("click" , clearAllDrivers);
 })();
-
-
-
-
-
-
-
-
-
