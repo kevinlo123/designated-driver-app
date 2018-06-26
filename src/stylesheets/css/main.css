@@ -15,15 +15,13 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../.././images/alcohol.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
   opacity: 0;
   transition: 1s opacity; }
   @media (min-width: 600px) {
     .main-wrapper {
       background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../.././images/highway.jpg");
       background-size: cover;
-      background-repeat: no-repeat;
-      height: 105vh; } }
+      background-repeat: no-repeat; } }
 
 .header {
   background: linear-gradient(180deg, #3684df, #004fb3);
