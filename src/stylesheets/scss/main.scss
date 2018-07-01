@@ -20,6 +20,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../.././images/alcohol.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    height: 800px;
     opacity: 0;
     transition: 1s opacity;
     @media (min-width: 600px){
